@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item" ref="li">
-    <a class="nav-link" @click="clicked"><slot></slot></a>
+    <a class="nav-link" :href=link><slot></slot></a>
   </li>
 </template>
 
@@ -11,9 +11,7 @@ export default {
 
   },
   methods: {
-    clicked() {
-      window.location = this.link;
-    }
+
   }
 }
 </script>
